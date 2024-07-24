@@ -8,8 +8,12 @@ export const productsApi = createApi({
     credentials: "include",
   }),
   endpoints: (builder) => ({
-    getProducts: builder.query({
+    getProductsInHome: builder.query({
       query: () => "/products",
+    }),
+    getProducts: builder.query({
+      query: ({ page = 1, limit = 8 }) =>
+        `/products?page=${page}&limit=${limit}`,
     }),
 
     getProductById: builder.query({
@@ -18,4 +22,4 @@ export const productsApi = createApi({
   }),
 });
 
-export const { useGetProductsQuery, useGetProductByIdQuery } = productsApi;
+export const {useGetProductsInHomeQuery , useGetProductsQuery, useGetProductByIdQuery } = productsApi;

@@ -1,10 +1,9 @@
-import { useGetProductsQuery } from "./../../app/api/productsApi";
+import { useGetProductsInHomeQuery } from "./../../app/api/productsApi";
 import ProductCard from "../../components/ProductCard";
 import { Link } from "react-router-dom";
 
 export default function HomePage() {
-
-  const { data, isError, isLoading } = useGetProductsQuery()
+  const { data, isError, isLoading } =useGetProductsInHomeQuery()
   const products = data?.data
 
   return (
@@ -27,7 +26,6 @@ export default function HomePage() {
                 </div> : isError && <h1>error........</h1>      
           }      
         </div>
-
         </div>
     </div>
   )
