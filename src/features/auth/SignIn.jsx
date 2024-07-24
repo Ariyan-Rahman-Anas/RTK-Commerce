@@ -87,7 +87,7 @@ export default function SignIn() {
                 </div>
                 <input type="submit" value={"Sign in"} className="btn" />
           </form>
-          <p>New in here? <Link to={"/sign-up"}>Sign up</Link> </p>
+          <p>New in here? <Link to={"/sign-up"} className="font-medium hover:text-primary duration-500 " >Sign up</Link> </p>
         </div>
   )
 }

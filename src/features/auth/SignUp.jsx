@@ -99,7 +99,7 @@ export default function SignUp() {
         </div>
         <input type="submit" value={"Sign up"} className="btn" />
       </form>
-      <p>Already have an account? <Link to={"/log-in"}>Sign in</Link> </p>
+      <p>Already have an account? <Link to={"/log-in"} className="font-medium hover:text-primary duration-500 ">Sign in</Link> </p>
     </div>
   )
 }

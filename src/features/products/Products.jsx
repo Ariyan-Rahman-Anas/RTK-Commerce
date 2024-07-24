@@ -21,7 +21,7 @@ const Products = () => {
       ) : isError ? (
         <h1>Error...</h1>
       ) : (
-        <div className="w-full mb-6 ">
+        <div className="w-full my-6 ">
           <h1 className="text-left w-full text-4xl font-extralight">
             Here are some of our products
           </h1>
