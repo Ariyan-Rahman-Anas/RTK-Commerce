@@ -16,7 +16,7 @@ const Toast = () => {
   }, [notifications, dispatch]);
 
   return (
-    <div className="fixed top-2 right-2 space-y-2 z-50">
+    <div className="fixed top-2 right-2 space-y-2 z-[9000] ">
       {notifications.map((notification) => (
         <div
           key={notification.id}

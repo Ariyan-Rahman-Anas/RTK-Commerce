@@ -15,13 +15,13 @@ const Products = () => {
   };
 
   return (
-    <div className="min-h-screen my-10 w-full md:w-[85vw] mx-auto flex flex-col items-center justify-center">
+    <div className="min-h-screen mt-10 w-full md:w-[85vw] mx-auto flex flex-col items-center justify-center px-2 ">
       {isLoading ? (
         <h1>Loading...</h1>
       ) : isError ? (
         <h1>Error...</h1>
       ) : (
-        <div className="w-full">
+        <div className="w-full mb-6 ">
           <h1 className="text-left w-full text-4xl font-extralight">
             Here are some of our products
           </h1>

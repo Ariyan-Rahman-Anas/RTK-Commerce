@@ -7,11 +7,11 @@ export default function HomePage() {
   const products = data?.data
 
   return (
-    <div className="flex  items-center justify-center text-center ">
+    <div className="flex  items-center justify-center text-center px-2 ">
         <div>
         <div className="min-h-[90vh] flex flex-col items-center justify-center text-center gap-6 ">
           <h1 className="text-3xl tracking-wider leading-10 "><span className="text-7xl">Explore</span> <span className="border-b border-primary text-primary">Redux Toolkit Powered</span> <p className="text-5xl ">web application</p> </h1>
-          <Link className="btn">Get Started</Link>
+          <Link to={"/products"} className="btn">Get Started</Link>
         </div>
         
         <div className="w-full md:w-[85vw] mx-auto my-20 ">

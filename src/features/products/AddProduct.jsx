@@ -41,7 +41,7 @@ export default function AddProductPage() {
     };
 
     return (
-        <div className="my-10 text-center">
+        <div className="my-10 text-center  px-2 ">
             <form onSubmit={handleAddProduct} className="space-y-4 w-full md:w-[80vw] lg:w-[60vw] mx-auto">
                 <div className="flex flex-col md:flex-row gap-4">
                     <div className="relative brand w-full">

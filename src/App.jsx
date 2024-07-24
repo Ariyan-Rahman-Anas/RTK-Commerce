@@ -13,7 +13,7 @@ import SignUp from './features/auth/SignUp';
 
 const App = () => {
   return (
-      <div className="p-2 bg-gray-200 relative min-h-screen">
+      <div className="bg-gray-200 relative min-h-screen">
         <Navbar />
         <Toast />
         <Routes>
