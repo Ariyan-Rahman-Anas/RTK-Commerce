@@ -3,8 +3,9 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const authApi = createApi({
   reducerPath: "auth",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:5000",
-    credentials: "include", 
+    // baseUrl: "http://localhost:5000",
+    baseUrl: "https://rtk-commerce-back-end.vercel.app",
+    credentials: "include",
   }),
   endpoints: (builder) => ({
     signUp: builder.mutation({
@@ -26,9 +27,9 @@ export const authApi = createApi({
     signOut: builder.mutation({
       query: () => ({
         url: "/log-out",
-        method:"GET"
-      })
-    })
+        method: "GET",
+      }),
+    }),
   }),
 });
 
